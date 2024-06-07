@@ -6,12 +6,14 @@ buildscript {
         gradlePluginPortal()
         mavenCentral()
         maven {
-            url 'https://maven.google.com/'
-            name 'Google'
+//            url 'https://maven.google.com/'
+//            name 'Google'
+            url 'https://maven.aliyun.com/repository/google'
         }
     }
     dependencies {
         classpath 'com.android.tools.build:gradle:7.2.1'
+//        classpath 'com.android.tools.build:gradle:3.5.2'
         classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version"
         // NOTE: Do not place your application dependencies here; they belong
         // in the individual module build.gradle files
@@ -23,8 +25,9 @@ allprojects {
         gradlePluginPortal()
         mavenCentral()
         maven {
-            url 'https://maven.google.com/'
-            name 'Google'
+//            url 'https://maven.google.com/'
+            url 'https://maven.aliyun.com/repository/google'
+//            name 'Google'
         }
     }
 }
